@@ -1,0 +1,91 @@
+<html>
+
+<!--
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- for logo fb and insta -->
+
+<!--<link href="../static/sentimentalIcon.jpg" rel="icon">-->
+
+<!--<link href="https://i.ibb.co/rG9vqHV/sentimental-Icon.jpg" rel="icon">-->
+
+<!--<link rel="stylesheet" type="text/css" href="../static/style.css">-->
+
+<!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>-->
+
+<link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?export=view&id=1mES7YxAxEu3jZjZlXSdfwffJsInzfMo5">
+
+
+<div id="PageTitle">
+<a href="{{url_for('openpage')}}" style="text-decoration: none;">
+Sentiment Analyzer Tool
+</a>
+</div>
+
+<head>
+<div class="container">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=0.85">
+
+<title>
+Sentimental Analyzer
+</title>
+</head>
+
+
+{% block content %}
+
+<br><br>
+<body>
+
+<div  class="w3-container">
+  <form action="submit_details" method="post" id="sendreview">
+
+<div align="center">
+<br>
+    <!--<label for="commenttag" id="responsefont" >Response : </label><br>--><br>
+   <textarea id="commenttag" name="comment" autofocus minlength="15" rows="10" cols="90" placeholder="Enter Your Response Here.." required></textarea><br><br>
+   <div style="padding-left:3%;padding-top:0.65%;color:#912C22"><b>Minimum Character Length : 15</b></div>
+<br><br>
+<input id="submitbutton" type="submit" name="" value="Submit">
+</div>
+  </form></div><br><br>
+
+</body>
+
+{% endblock %}
+
+<!--<div style="padding-top:35px"></div>-->
+
+<!--
+<footer>
+
+<div id="PageTitle1">
+  <div style="float:right;"> For Queries Contact : <br>
+  phani4842@gmail.com<br>sharathchandravivek@gmail.com<br>navaridineshreddy@gmail.com</div>
+Developed by ,<br>
+<ul><li>Phaneendhra	<li>Sharath <li>Dinesh </ul> </div>
+</footer>-->
+
+
+</div>
+<footer>
+<div id="PageTitle1">
+  <!--<div style="float:right;"> For Queries Contact : <br>
+  phani4842@gmail.com </div>-->
+  <div style="float:right;"> For Queries Contact : <br>
+  &nbsp &nbsp &nbsp&nbsp &nbsp<a href="http://www.facebook.com/phani401" target ="_blank" class="fa fa-facebook"></a>&nbsp &nbsp &nbsp<a href="https://www.instagram.com/_phani06_" target ="_blank" class="fa fa-instagram"></a>
+  </div>
+Developed by ,<br>
+Phaneendhra</div>
+</footer>
+</html>
